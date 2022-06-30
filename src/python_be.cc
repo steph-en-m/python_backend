@@ -958,7 +958,6 @@ ModelInstanceState::ProcessRequestsDecoupled(
   uint64_t compute_start_ns = 0;
   SET_TIMESTAMP(compute_start_ns);
   reporter.SetComputeStartNs(compute_start_ns);
-  std::cout << "*Set compute timestamp: " << std::to_string(compute_start_ns) << " *" << std::endl;
   std::unique_ptr<IPCMessage> ipc_message;
   RETURN_IF_EXCEPTION(
       ipc_message =
@@ -1063,7 +1062,6 @@ ModelInstanceState::ProcessRequests(
   uint64_t compute_start_ns = 0;
   SET_TIMESTAMP(compute_start_ns);
   reporter.SetComputeStartNs(compute_start_ns);
-  std::cout << "*Set compute timestamp: " << std::to_string(compute_start_ns) << " *" << std::endl;
 
   // This means that the stub process has exited and Python
   // backend failed to restart the stub process.

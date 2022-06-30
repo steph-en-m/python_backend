@@ -88,24 +88,28 @@ void
 PbMetricReporter::SetExecStartNs(const uint64_t exec_start_ns)
 {
   exec_start_ns_ = exec_start_ns;
+  std::cout << "*Set exec start timestamp: " << std::to_string(exec_start_ns) << " *" << std::endl;
 }
 
 void
 PbMetricReporter::SetComputeStartNs(const uint64_t compute_start_ns)
 {
   compute_start_ns_ = compute_start_ns;
+  std::cout << "*Set compute start timestamp: " << std::to_string(compute_start_ns) << " *" << std::endl;
 }
 
 void
 PbMetricReporter::SetComputeEndNs(const uint64_t compute_end_ns)
 {
   compute_end_ns_ = compute_end_ns;
+  std::cout << "*Set compute end timestamp: " << std::to_string(compute_end_ns) << " *" << std::endl;
 }
 
 void
 PbMetricReporter::SetExecEndNs(const uint64_t exec_end_ns)
 {
   exec_end_ns_ = exec_end_ns;
+  std::cout << "*Set exec end timestamp: " << std::to_string(exece_end_ns) << " *" << std::endl;
 }
 
 void
