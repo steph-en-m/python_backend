@@ -30,6 +30,7 @@
 #include <boost/interprocess/allocators/allocator.hpp>
 #include <boost/interprocess/detail/atomic.hpp>
 #include <boost/interprocess/managed_external_buffer.hpp>
+#include <functional>
 #include <iostream>
 #include <memory>
 #include <type_traits>
