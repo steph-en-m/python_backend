@@ -33,7 +33,6 @@
 namespace triton { namespace backend { namespace python {
 class PbLog {
  public:
-
   /// Create a PbLog instance
   PbLog(
       const std::string& filename, uint32_t line, const std::string& message,
@@ -65,7 +64,7 @@ class PbLogShm {
       std::unique_ptr<SharedMemoryManager>& shm_pool,
       const std::string& filename, const uint32_t& line,
       const std::string& message, const LogLevel& level);
-  
+
   /// Load PbLog object to shared memory
   static std::unique_ptr<PbLog> LoadFromSharedMemory(
       std::unique_ptr<SharedMemoryManager>& shm_pool,

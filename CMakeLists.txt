@@ -205,6 +205,8 @@ set(
   src/pb_stub.cc
   src/pb_response_iterator.h
   src/pb_response_iterator.cc
+  src/model_context.h
+  src/model_context.cc
 )
 
 list(APPEND
@@ -302,6 +304,13 @@ install(
     TritonPythonBackend::
   DESTINATION
     ${INSTALL_CONFIGDIR}
+)
+
+install(
+  DIRECTORY
+    src/resources/plugin_models
+  DESTINATION
+    ${CMAKE_INSTALL_PREFIX}/backends/python
 )
 
 install(
